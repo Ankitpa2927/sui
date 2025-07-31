@@ -1,4 +1,4 @@
-FROM ubuntu:latest AS chef
+FROM ubuntu:24.10 AS chef
 WORKDIR sui
 ARG GIT_REVISION
 ENV GIT_REVISION=$GIT_REVISION
@@ -44,7 +44,7 @@ COPY external-crates external-crates
 RUN cargo build --release --bin sui --bin sui-rosetta
 
 # Production Image
-FROM ubuntu:latest AS runtime
+FROM ubuntu:24.10 AS runtime
 WORKDIR sui
 RUN apt-get update && apt-get install -y ca-certificates
 COPY --from=builder /sui/target/release/sui /usr/local/bin
