@@ -2,3 +2,4 @@ boto3==1.23.1
 fabric==2.7.0
 matplotlib==3.5.2
 multiaddr==0.0.9
+fonttools>=4.61.0 # not directly required, pinned by Snyk to avoid a vulnerability
