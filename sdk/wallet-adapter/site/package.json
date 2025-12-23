@@ -19,8 +19,8 @@
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "@mysten/wallet-kit": "workspace:*",
-    "next": "^13.2.4",
-    "nextra": "latest",
+    "next": "^13.5.11",
+    "nextra": "3.2.4",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
