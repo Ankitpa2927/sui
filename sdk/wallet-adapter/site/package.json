@@ -20,7 +20,7 @@
   "dependencies": {
     "@mysten/wallet-kit": "workspace:*",
     "next": "^13.2.4",
-    "nextra": "latest",
+    "nextra": "3.0.0",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
